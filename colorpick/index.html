@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  </style>
+</head>
+
+<body>
+  <img src="" id="image">
+  <script src="rgbaster.js"></script>
+  <script>
+  var img = document.getElementById('image');
+  var activeid = (location.search).replace("?",'');
+  if(activeid && activeid <= 6 && activeid > 0) {
+    img.src = activeid + '.png'
+  } else {
+    img.src = 1 + '.png'
+  }
+  // or
+  // var img = 'http://example.com/path-to-image.jpg'
+  RGBaster.colors(img, {
+    // exclude: [ 'rgb(255,255,255)', 'rgb(0,0,0)' ],
+    paletteSize: 1,
+    success: function(payload) {
+      // You now have the payload.
+      console.log(payload.dominant);
+      document.body.style.background = payload.dominant;
+    }
+  });
+  </script>
+</body>
+
+</html>

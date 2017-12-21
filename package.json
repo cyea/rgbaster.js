@@ -1,0 +1,26 @@
+{
+  "name": "rgbaster",
+  "version": "1.0.0",
+  "description": "rgbaster.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jingchaofang/rgbaster.js.git"
+  },
+  "keywords": [
+    "rgbaster.js"
+  ],
+  "author": "jingchaofang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jingchaofang/rgbaster.js/issues"
+  },
+  "homepage": "https://github.com/jingchaofang/rgbaster.js#readme",
+  "devDependencies": {
+    "uglify-js": "^3.2.2"
+  }
+}
