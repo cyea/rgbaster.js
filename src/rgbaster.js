@@ -1,5 +1,5 @@
 ;
-(function(window, undefined) {
+(function() {
 
   "use strict";
 
@@ -58,10 +58,6 @@
     return { name: makeRGB(a), count: b };
   }
 
-
-  // RGBaster Object
-  // ---------------
-  //
   var PALETTESIZE = 10;
 
   var RGBaster = {};
@@ -118,4 +114,4 @@
 
   window.RGBaster = window.RGBaster || RGBaster;
 
-})(window);
+})();

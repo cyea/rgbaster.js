@@ -15,7 +15,7 @@ if (!fs.existsSync(resolvePath(RELEASE_ROOT_PATH))) {
 
 var options = {
   mangle: {
-    properties: true,
+    reserved: ['RGBaster']
   }
 }
 
