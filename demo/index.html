@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <meta charset="utf-8">
+  <title></title>
+  <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
   <style>
   * {
     margin: 0;
@@ -21,11 +21,11 @@
 
 <body>
   <img src="" id="image">
-  <script src="rgbaster.js"></script>
+  <script src="../dist/rgbaster.min.js"></script>
   <script>
   var img = document.getElementById('image');
-  var activeid = (location.search).replace("?",'');
-  if(activeid && activeid <= 6 && activeid > 0) {
+  var activeid = (location.search).replace("?", '');
+  if (activeid && activeid <= 6 && activeid > 0) {
     img.src = activeid + '.png'
   } else {
     img.src = 1 + '.png'
